@@ -40,10 +40,10 @@ Die Spracherkennung wurde u.A. mittels Scikit-learn implementiert. Aus den Daten
 
 Es stellte sich heraus, dass die Support Vector Machine (SVM) in Kombination mit den MFCCs am Besten in der Lage war Sprache von nicht Sprache zu unterscheiden. Der Crest-Faktor führte in allen Fällen zu schlechteren Ergebnissen. Für das große Datenset wurde deshalb die SVM mit MFCCs als Feature trainiert. 
 
-warum schlechter?
+Leider wurde der Klassifkator zum Ende der Entwicklung immer schlechter. Bis zum Zeitpunkt der Abgabe konnte dafür kein Grund gefunden werden. Da erst später die Möglichkeit bestand den Klassifikator abzuspeichern, konnten die alten Zustände nicht wieder hergestellt werden. 
 
 #### *Verwendete Daten*
-Für die Spracherkennung wurde der Klassifikator mit Audiodateien aus der Vorlesung trainiert.
+Für die Spracherkennung wurde der Klassifikator mit dem gesamten Datenset aus der Vorlesung trainiert.
 Darin sind Aufnahmen von Sprache, Noise und Musik enthalten.
 Aus diesem Datenset wurde ein Datenset zusammengestellt, welches auf eine hohe Diversität des Materials abzielt. Das Sprachmaterial wurde von männlichen und weiblichen Sprechern in unterschiedlichen Sprachen eingesprochen. Musik ist in verschiedensten Genres vertreten. Rauschen ist ebenfalls vorhanden.
 
@@ -53,7 +53,7 @@ Aus diesem Datenset wurde ein Datenset zusammengestellt, welches auf eine hohe D
 ~~Das Datenset war folgendermaßen aufgebaut (nur zusammenaddierte Dauer der Audiodateien)~~:
 
 ~~Sprache: 9:21 h, Noise: 3:40 h, Musik: 3:53 h~~
-Aufgrund der Verwendung eines vorgegebenen, kleineren Datensets musste keine Datenzubereitung stattfinden. Ein großes Datenset konnte leider nicht verwendet werden, da keiner der verwendeten Rechner stark genug gewesen ist. 
+Aufgrund der Verwendung eines vorgegebenen, kleineren Datensets fand keine Datenzubereitung statt. Unser großes Datenset konnte leider nicht verwendet werden, da keiner der verwendeten Rechner stark genug gewesen ist. Hier ist der [Link](https://ccs.jade-hs.de/s/E4dsBZjLJ7DH8Rr) für das Datenset, welches wir eigentlich verwendet hätten.
 
 
 ## Wie werden die Skripte ausgeführt?
