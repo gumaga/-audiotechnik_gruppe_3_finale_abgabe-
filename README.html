@@ -1,0 +1,387 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\leon\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.16\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1>Spracherkenner mit 3-Band-Kompressor</h1>
+<p><em>Daniel-Jos&#xE9; Alcala Padilla, Tobias Danneleit und Leon Hochberger (2021) @ TGM, Jade Hochschule Wilhelmshaven Oldenburg Elsfleth</em></p>
+<hr>
+<h2 class="mume-header" id="was-war-das-ziel">Was war das Ziel?</h2>
+
+<p>Die Ziel war einen Klassifikator f&#xFC;r Sprache zu entwickeln, der mit einem Multiband-Kompressor gekoppelt werden sollte. Die Aufgabe war Teil der Pr&#xFC;fungsleistung im SoSe2021 f&#xFC;r das Modul <em>&apos;Audiotechnik&apos;</em>. Der Klassifikator sollte in der Lage sein Sprache von Nicht-Sprache zu unterscheiden. Das Signal sollte danach mit einer Filterbank bearbeitet werden und wenn Sprache vorhanden war, komprimiert werden. Die Filterbank und der Kompressor sollten nach  eigenem Ermessen eingestellt werden.</p>
+<h2 class="mume-header" id="wie-wurden-diese-umgesetzt">Wie wurden diese umgesetzt?</h2>
+
+<h4 class="mume-header" id="programmiersprache-und-ben%C3%B6tigte-packages"><em>Programmiersprache und ben&#xF6;tigte Packages</em></h4>
+
+<p>Die gew&#xE4;hlte Programmiersprache ist Python. Verwendet wurde Python 3.8.3 oder h&#xF6;her. Die zus&#xE4;tzlich ben&#xF6;tigten Packages sind (<strong>Fett</strong> markierte packages sind nicht in der Standardbibliothek von Python enthalten):</p>
+<ul>
+<li>os</li>
+<li>pathlib</li>
+<li>pickle</li>
+<li><strong>scikit-learn</strong></li>
+<li><strong>numpy</strong></li>
+<li><strong>scipy</strong></li>
+<li><strong>matplotlib</strong></li>
+<li><strong>soundfile</strong></li>
+<li><strong>python_speech_features</strong></li>
+</ul>
+<h4 class="mume-header" id="kompressor"><em>Kompressor</em></h4>
+
+<p>Der Kompressor befindet sich in der Datei <em><a href="http://compressor.py">compressor.py</a></em>. Er basiert auf Vorlesungsunterlagen und dem Paper <em>&apos;Digital Dynamic Range Compressor Design - A Tutorial and Analysis&apos;</em> von <em>Giannoulis et al</em>. (f&#xFC;r weitere Info s. Datei-Header). Weiterhin kann ihm ein Index-Vektor &#xFC;bergeben werden, sodass er ein Signal nur zu bestimmten Zeitpunkten komprimiert. Er wurde hier mit einem Treshold von -20 dB, einer Ratio von 2:1, einer Attack-Zeit von 10 ms, eine Release-Zeit von 50 ms, Softkneeeinstellung und keinem Make-Up Gain eingestellt. Diese Einstellung wurden subjektiv am angenehmsten f&#xFC;r Sprache wahrgenommen.</p>
+<h4 class="mume-header" id="filterbank"><em>Filterbank</em></h4>
+
+<p>Die Filterbank befindet sich in der Datei <em><a href="http://filterbank.py">filterbank.py</a></em>. Sie basiert auf Vorlesungsunterlagen und ist ein 3-Band-Equalizer mit jeweils aneinander angrenzendem Tief-, Band- und Hochpass. Die Grenzfrequenzen des Bandpasses k&#xF6;nnen gew&#xE4;hlt werden. In dieser Anwendung wurden sie auf 250 Hz und 4000 Hz gesetzt. Diese Grenzen sind so gelegt, dass der informationshaltige Teil der Sprache durch Absenken der Frequenzbereiche dar&#xFC;ber und darunter hervorgehoben werden kann, um evtl. Sprachverst&#xE4;ndlichkeit zu erh&#xF6;hen. Auf eine Erh&#xF6;hung des mittleren Frequenzbereichs wurde verzichtet um clipping zu vermeiden. HIer wurden der Tiefpass und der Hochpass mit einem gain von -12 dB versehen. Auch hier galt wieder, dass diese Einstellung subjektiv am angehmsten wahrgenommen wurde.</p>
+<p>...</p>
+<h4 class="mume-header" id="spracherkennung"><em>Spracherkennung</em></h4>
+
+<p>Die Spracherkennung wurde u.A. mittels Scikit-learn implementiert. Aus den Daten wurden MFCCs als Features extrahiert. Weiterhein wurde der Crest Faktor also Feature implementiert. Diese beiden Features schienen in bezug auf Sprache eine gute Wahl zu sein. Nach der Extraktion der Features wurde der Klassifikator trainiert. Mit einem kleinen Datenset wurden verschiedene Klassifikatoren auf ihre F&#xE4;higkeit das Sprachmaterial zu unterscheiden getestet. Die Wahrscheinlichkeit f&#xFC;r richtige Antworten bei einem kleinen Testset, MFCCs als Features und randomisierter Train-Test-Aufteilung des Sets f&#xFC;r mehrere Durchl&#xE4;ufe sind im Folgenden dargestellt:</p>
+<ul>
+<li>Support Vector Machine:   94.65%, 94,78%, 94,71%, 94,75%</li>
+<li>Gaussian Mixture Models:  56,63%, 55,99%, 56,00%, 56,03%</li>
+<li>Logistic Regression:      81,30%, 81,55%, 81,72%, 81,27%</li>
+</ul>
+<p>Es stellte sich heraus, dass die Support Vector Machine (SVM) in Kombination mit den MFCCs am Besten in der Lage war Sprache von nicht Sprache zu unterscheiden. Der Crest-Faktor f&#xFC;hrte in allen F&#xE4;llen zu schlechteren Ergebnissen. F&#xFC;r das gro&#xDF;e Datenset wurde deshalb die SVM mit MFCCs als Feature trainiert.</p>
+<h4 class="mume-header" id="verwendete-daten"><em>Verwendete Daten</em></h4>
+
+<p>F&#xFC;r die Spracherkennung wurde der Klassifikator mit Audiodateien aus dem MUSAN-Korpus trainiert.<br>
+Darin sind Aufnahmen von Sprache, Noise und Musik enthalten.<br>
+Aus diesem Korpus wurde ein Datenset zusammengestellt, welches auf eine hohe Diversit&#xE4;t des Materials abzielt. Das Sprachmaterial wurde von m&#xE4;nnlichen und weiblichen Sprechern in unterschiedlichen Sprachen eingesprochen. Musik ist in verschiedensten Genres vertreten. Rauschen??<br>
+Alle enthaltenen Dateien unterliegen einer Creative-Common-Lizenz.</p>
+<p><em><strong>Zubereitung der Daten</strong></em>:<br>
+Die Daten aus dem MUSAN-Korpus wurden in 3 s lange Bl&#xF6;cke aufgeteilt und abgespeichert. Die Bl&#xF6;cke von vom Ende einer Datei waren oftmals weniger als 3 s lang. Das verwendete Skript ist <em>cut_my_file_into_pieces.py</em>. Es wird nicht zur Verwendung der Klassifikation ben&#xF6;tigt, ist aber zu Vollst&#xE4;ndigkeit im Repository enthalten.</p>
+<p>Das Datenset war folgenderma&#xDF;en aufgebaut (nur zusammenaddierte Dauer der Audiodateien):</p>
+<p>Sprache: 9:21 h, Noise: 3:40 h, Musik: 3:53 h</p>
+<h2 class="mume-header" id="wie-werden-die-skripte-ausgef%C3%BChrt">Wie werden die Skripte ausgef&#xFC;hrt?</h2>
+
+<p>Die Skripte k&#xF6;nnen auf zwei unterschiedliche Arten ausgef&#xFC;hrt werden.<br>
+In beiden F&#xE4;llen muss die zu komprimierenden Audiodatei, das <em>Testfile</em>, im .wav-Format vorliegen.<br>
+Um die Skripte zu nutzen, muss und darf im Ordner  <em>test_files</em> <strong>nur ein</strong> <em>Testfile</em> abgelegt werden. Falls mehrere Testfiles komprimiert werden sollen, muss dies nacheinander geschehen, sodass immer nur ein File im Ordner ist. Der Ordner <em>test_files</em> und die vier Python-Dateien m&#xFC;ssen im selben Directory liegen.<br>
+In diesem Directory wird nach der Nutzung die komprimierte Version des Testfiles unter dem Namen <em>test_signal_compressed.wav</em> abgespeichert.</p>
+<h4 class="mume-header" id="1-nutzung-mit-dem-bereits-trainierten-klassifikator">1. Nutzung mit dem bereits trainierten Klassifikator:</h4>
+
+<p>Mit den Skripten wird die Datei <em>classifier_file.obj</em> bereitgestellt.<br>
+Diese Datei enth&#xE4;lt den Klassifikator, wie er mit dem oben genannten Datenset trainiert wurde.<br>
+Sie muss im selben Directory wie die vier Python-Skripten und der Ordner <em>test_files</em> liegen.<br>
+F&#xFC;r die Nutzung wird das Skript <em>classifier_speech_features_application.py</em> ausgef&#xFC;hrt. Hierzu einfach in einer Python-Konsole diese Datei in dem Ordner in dem sich dieses Repository befindet ausf&#xFC;hren.<br>
+Um den trainierten Klassifikator nutzen zu k&#xF6;nnen, muss in dieser Datei  <em>desired_feature = &apos;mfcc&apos;</em> stehen (Zeile 33). Bei einem anderen Feature k&#xF6;nnen falsche bzw. unerwartete Ergebnisse entstehen.</p>
+<h4 class="mume-header" id="2-klassifikator-wird-vom-nutzer-selbst-trainiert">2. Klassifikator wird vom Nutzer selbst trainiert:</h4>
+
+<p>Um einen Klassifikator trainieren zu k&#xF6;nnen, muss im Directory eine bestimmte Ordnerstruktur angelegt werden. Sie besteht aus dem Ordner <em>Dataset</em>, in welchem die Unterordner <em>Speech</em>, <em>Noise</em> und <em>Music</em> liegen. Die Trainingsdateien werden je nach ihrem Inhalt in den jeweiligen Unterordner abgelegt. So wie das Testfile, m&#xFC;ssen auch die Trainingsdateien im .wav-Format vorliegen. F&#xFC;r die Vergleichbarkeit mit dem trainierten Klassifikator sollten die einzelnen Audiodateien etwa 3 s lang sein. Hierzu kann das Skript <em>cut_my_file_into_pieces.py</em> verwendet werden (weitere Anweisungen im zugeh&#xF6;rigen Datei-Header).</p>
+<p>Zun&#xE4;chst wird das Skript <em>classifier_speech_features.py</em> ausgef&#xFC;hrt.<br>
+Im Directory wird dadurch die Datei <em>classifier_file.obj</em> neu erstellt, bzw. &#xFC;berschrieben. Falls das &#xDC;berschreiben des bestehenden Klassifikators  nicht gew&#xFC;nscht ist, sollte der Dateiname dieser Datei ge&#xE4;ndert werden. Jedoch funktioniert <em>classifier_speech_features_application.py</em> nur mit dem Dateinamen <em>classifier_file.obj</em>, sodass immer nur der in der Datei enthaltene Klassifikator verwendet wird.<br>
+Danach kann analog zu 1.) das Skript <em>classifier_speech_features_application.py</em> zum Komprimieren des Testfiles ausgef&#xFC;hrt werden.<br>
+Auch hier muss beachtet werden, dass das ausgew&#xE4;hlte Feature, dem entsprechen muss, mit welchem der Klassifikator trainiert wurde.</p>
+<h2 class="mume-header" id="was-kann-verbessert-werden">Was kann verbessert werden?</h2>
+
+<ul>
+<li>Klassifikator mit noch mehr Daten in h&#xF6;herer Variabilit&#xE4;t trainieren</li>
+<li>Weitere Kombination von Features austesten</li>
+<li>Ab&#xE4;ndern (vielleicht Absenken) des Signals, wenn keine Sprache vorhanden ist</li>
+<li>Denoising der Sprache</li>
+<li>mehrere Klassifikatoren trainieren und abrufbar machen</li>
+<li>nutzerfreundliche Ordnereingabe und Abfrage bestimmer Aspekte</li>
+</ul>
+<h2 class="mume-header" id="lizenz">Lizenz</h2>
+
+<p><em><strong>BSD 3-clause</strong></em>:</p>
+<p>Copyright 2021 Alcala Padilla, Danneleit, Hochberger</p>
+<p>Redistribution and use in source and binary forms, with or without modification,<br>
+are permitted provided that the following conditions are met:</p>
+<ol>
+<li>
+<p>Redistributions of source code must retain the above copyright notice, this list<br>
+of conditions and the following disclaimer.</p>
+</li>
+<li>
+<p>Redistributions in binary form must reproduce the above copyright notice, this<br>
+list of conditions and the following disclaimer in the documentation and/or other<br>
+materials provided with the distribution.</p>
+</li>
+<li>
+<p>Neither the name of the copyright holder nor the names of its contributors may<br>
+be used to endorse or promote products derived from this software without specific<br>
+prior written permission.</p>
+</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY<br>
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES<br>
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT<br>
+SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,<br>
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED<br>
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR<br>
+BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN<br>
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN<br>
+ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF<br>
+SUCH DAMAGE.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

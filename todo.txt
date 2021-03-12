@@ -1,0 +1,13 @@
+- classifier trainieren
+- ~~README~~
+    - überprüfen
+- ~~Code aufräumen~~
+    - ~~filterbank~~
+    - ~~compressor~~
+    - ~~classifier_speach_features~~
+    - ~~classifier_speech_features_application~~
+
+
+-- = lelehoho
+:: = @therealronny
+<< = danidanidanidani
