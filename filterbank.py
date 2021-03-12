@@ -3,7 +3,7 @@ class for designing a 3-band filterbank
 
 Authors: Leon Hochberger, Daniel-José Alcala Padilla, Tobias Danneleit   
 Date: March 10th, 2021
-License: 3-clause BSD (see README in https://tgm-git.jade-hs.de/leon.hochberger/audiotechnik_gruppe_3_finale_abgabe.git)
+License: 3-clause BSD (see README in https://github.com/gumaga/-audiotechnik_gruppe_3_finale_abgabe-)
 """
 import scipy.signal as signal
 import numpy as np 

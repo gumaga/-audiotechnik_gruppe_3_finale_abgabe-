@@ -5,7 +5,7 @@ For information on this file see: README.md
 
 Authors: Leon Hochberger, Daniel-José Alcala Padilla, Tobias Danneleit   
 Date: March 10th, 2021
-License: 3-clause BSD (see: https://tgm-git.jade-hs.de/leon.hochberger/audiotechnik_gruppe_3_finale_abgabe.git)
+License: 3-clause BSD (see: https://github.com/gumaga/-audiotechnik_gruppe_3_finale_abgabe-)
 """
 
 import soundfile as sf

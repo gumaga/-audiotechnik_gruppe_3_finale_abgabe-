@@ -10,7 +10,7 @@ In order to use this script the main folders must be created in the same directo
 
 Authors: Leon Hochberger, Daniel-José Alcala Padilla, Tobias Danneleit   
 Date: March 10th, 2021
-License: 3-clause BSD (see README in https://tgm-git.jade-hs.de/leon.hochberger/audiotechnik_gruppe_3_finale_abgabe.git)
+License: 3-clause BSD (see README in https://github.com/gumaga/-audiotechnik_gruppe_3_finale_abgabe-)
 """
 import os
 import soundfile as sf
