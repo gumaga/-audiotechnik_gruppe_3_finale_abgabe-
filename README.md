@@ -40,18 +40,21 @@ Die Spracherkennung wurde u.A. mittels Scikit-learn implementiert. Aus den Daten
 
 Es stellte sich heraus, dass die Support Vector Machine (SVM) in Kombination mit den MFCCs am Besten in der Lage war Sprache von nicht Sprache zu unterscheiden. Der Crest-Faktor führte in allen Fällen zu schlechteren Ergebnissen. Für das große Datenset wurde deshalb die SVM mit MFCCs als Feature trainiert. 
 
+warum schlechter?
+
 #### *Verwendete Daten*
-Für die Spracherkennung wurde der Klassifikator mit Audiodateien aus dem MUSAN-Korpus trainiert.
+Für die Spracherkennung wurde der Klassifikator mit Audiodateien aus der Vorlesung trainiert.
 Darin sind Aufnahmen von Sprache, Noise und Musik enthalten.
-Aus diesem Korpus wurde ein Datenset zusammengestellt, welches auf eine hohe Diversität des Materials abzielt. Das Sprachmaterial wurde von männlichen und weiblichen Sprechern in unterschiedlichen Sprachen eingesprochen. Musik ist in verschiedensten Genres vertreten. Rauschen??
-Alle enthaltenen Dateien unterliegen einer Creative-Common-Lizenz.
+Aus diesem Datenset wurde ein Datenset zusammengestellt, welches auf eine hohe Diversität des Materials abzielt. Das Sprachmaterial wurde von männlichen und weiblichen Sprechern in unterschiedlichen Sprachen eingesprochen. Musik ist in verschiedensten Genres vertreten. Rauschen ist ebenfalls vorhanden.
 
 ***Zubereitung der Daten***:
-Die Daten aus dem MUSAN-Korpus wurden in 3 s lange Blöcke aufgeteilt und abgespeichert. Die Blöcke von vom Ende einer Datei waren oftmals weniger als 3 s lang. Das verwendete Skript ist *cut_my_file_into_pieces.py*. Es wird nicht zur Verwendung der Klassifikation benötigt, ist aber zu Vollständigkeit im Repository enthalten. 
+~~Die Daten aus dem MUSAN-Korpus wurden in 3 s lange Blöcke aufgeteilt und abgespeichert. Die Blöcke von vom Ende einer Datei waren oftmals weniger als 3 s lang. Das verwendete Skript ist *cut_my_file_into_pieces.py*. Es wird nicht zur Verwendung der Klassifikation benötigt, ist aber zu Vollständigkeit im Repository enthalten.~~
 
-Das Datenset war folgendermaßen aufgebaut (nur zusammenaddierte Dauer der Audiodateien):
+~~Das Datenset war folgendermaßen aufgebaut (nur zusammenaddierte Dauer der Audiodateien)~~:
 
-Sprache: 9:21 h, Noise: 3:40 h, Musik: 3:53 h
+~~Sprache: 9:21 h, Noise: 3:40 h, Musik: 3:53 h~~
+Aufgrund der Verwendung eines vorgegebenen, kleineren Datensets musste keine Datenzubereitung stattfinden. Ein großes Datenset konnte leider nicht verwendet werden, da keiner der verwendeten Rechner stark genug gewesen ist. 
+
 
 ## Wie werden die Skripte ausgeführt?
 Die Skripte können auf zwei unterschiedliche Arten ausgeführt werden.
