@@ -78,7 +78,24 @@ signal_out = gain * compressed_low + compressed_mid + gain * compressed_high
 # write signal into file so that you can (hopefully) hear a difference
 sf.write('test_signal_compressed.wav', data=signal_out, samplerate=fs)
 
-########
-'''
-Ideen: subplot mit time-signal oben, (prediction) in der Mitte oder als Linie im oberen Plot und unten was wir daraus gemacht haben-> lead_signal
-'''
+# plotting classifier output (lead) and the original audio signal
+time_vec = np.linspace(0, signal_length/fs, signal_length )
+
+fig, ax1 = plt.subplots()
+
+color = 'tab:blue'
+ax1.set_xlabel('time (s)')
+ax1.set_ylabel('Class (Speech = blue area)', color=color)
+ax1.plot(time_vec, lead, label= 'classification output')
+ax1.set_yticks([0,1])
+ax1.tick_params(axis='y', labelcolor=color)
+ax1.fill_between(time_vec, 0, lead)
+
+ax2 = ax1.twinx()
+
+color = 'tab:red'
+ax2.set_ylabel('original signal', color=color)  # we already handled the x-label with ax1
+ax2.plot(time_vec, signal, label= 'original signal signal', color=color )
+ax2.tick_params(axis='y', labelcolor=color)
+fig.tight_layout()  # otherwise the right y-label is slightly clipped
+plt.show()

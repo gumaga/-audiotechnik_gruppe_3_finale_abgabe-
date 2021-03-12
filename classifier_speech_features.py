@@ -39,7 +39,7 @@ class classifier_speech_features():
         if pretrained_mode == True: 
             data_path = os.path.join(directory, label) # path of folder containing test-data
         else:    
-            data_path = os.path.join(directory, "Dataset_small", label)   # path of subfolders containing train-data
+            data_path = os.path.join(directory, "Dataset", label)   # path of subfolders containing train-data
         folder = Path(data_path).rglob('*.wav')
         files = [x for x in folder] # all files inside a folder with global path
 
@@ -52,12 +52,6 @@ class classifier_speech_features():
 
         for filename in files:
             signal, fs = sf.read(filename) # for signal-length and samplerate
-
-            if return_testrun_values == True: # only for test signal: (in case of stereo signal)
-                signal = signal[:,1] # only left channel
-                signal_len = len(signal)
-            else:
-                None
 
             block_length_samples = int(np.floor((self.block_len_ms / 1000) * fs))
             forward = 1 - self.overlap
@@ -85,6 +79,7 @@ class classifier_speech_features():
 
         print('Done Extracting')
         if return_testrun_values == True:
+            signal_len = len(signal)
             return files_extracted, signal, fs, signal_len, block_length_samples, forward
         else:    
             return files_extracted
